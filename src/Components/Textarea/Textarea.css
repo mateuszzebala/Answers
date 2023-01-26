@@ -1,0 +1,47 @@
+.textarea-box{
+    border: 3px solid var(--special);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    cursor: text;
+    margin: 8px;
+    border-radius: 5px;
+}
+.textarea-box textarea{
+    border: 0;
+    font-size: 20px;
+    width: 300px;
+    min-height: 280px;
+    font-weight: 300;
+    resize: vertical;
+}
+.textarea-box textarea:focus{
+    outline: none;
+}
+.textarea-box .placeholder{
+    position: absolute;
+    top: 20px;
+    margin: 0;
+    transform: translate(0, -50%);
+    transition: 0.2s;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0 8px;
+    font-weight: 300;
+    color: #646464;
+}
+.textarea-box .focus{
+    font-size: 15px;
+    top: 0;
+    color: #000;
+}
+
+.textarea-box .eye{
+    position: absolute;
+    color: var(--font-color);
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}

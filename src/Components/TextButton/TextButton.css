@@ -1,0 +1,15 @@
+div.text-button{
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--special);
+    border: 3px solid var(--special);
+    margin: 8px;
+    border-radius: 5px;
+    font-size: 26px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}

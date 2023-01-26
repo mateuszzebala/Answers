@@ -1,0 +1,46 @@
+.hyper-button-element {
+    background-color: var(--special);
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    --lcolor: #fffÓ;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: box-shadow 0.2s;
+    margin: 5px;
+}
+.hyper-button-element:hover{
+    box-shadow: 0 0 10px var(--special);
+}
+.hyper-button-element:focus{
+    box-shadow: 0 0 10px var(--special);
+    outline: none;
+}
+
+.hyper-button-element.hover-effect:focus::after{
+    width: 100%;
+}
+.hover-effect{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+.hover-effect::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    height: 4px;
+    background-color: var(--lcolor);
+    transition: 0.3s;
+    border-radius: 4px;
+    margin-top: 2px
+}
+.hover-effect:hover::after{
+    width: 100%;
+}

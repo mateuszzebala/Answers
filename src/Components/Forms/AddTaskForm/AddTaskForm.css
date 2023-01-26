@@ -1,0 +1,19 @@
+.add-task-form{
+
+}
+.add-task-form .select-element{
+    background: var(--special);
+    width: 320px;
+}
+.add-task-form .select-element .dropdown button{
+    background: var(--special);
+}
+.add-task-form .select-element .dropdown{
+    background: var(--special);
+}
+
+@media (max-width: 1050px){
+    .add-task-form > * > .row-element{
+        flex-direction: column;
+    }
+}

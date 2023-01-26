@@ -1,0 +1,68 @@
+.video-element{
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.video-element:hover .video-tools{
+    opacity: 1;
+}
+.video-tools{
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 23px;
+    align-items: center;
+}
+.video-tools button{
+    color: #fff;
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+.video-tag{
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000, 0 0 15px #000;
+    width: 100%;
+    z-index: -1;
+}
+
+.video-element input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 70%;
+  height: 10px;
+
+    background-size: 70% 100%;
+    background: white;
+
+}
+
+.video-element input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 20px;
+  border-radius: 0;
+  background: var(--special);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+.video-element input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}

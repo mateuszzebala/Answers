@@ -1,0 +1,21 @@
+.book-list-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url('../../img/bg_books.png');
+    padding: 30px;
+}
+.book-list-element .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media (max-width: 750px) {
+    .book-list-element .top{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,102 @@
+.select-element{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-flex;
+    gap: 10px;
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.select-element .top{
+    display: inline-flex;
+    padding: 7px 0 2px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.select-element .bottom{
+
+    font-weight: 700;
+    gap: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.select-element .bottom .name{
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 70%;
+}
+.select-element .dropdown{
+    display: flex;
+    z-index: 19;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    background: var(--special);
+    flex-direction: column;
+    gap: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+
+}
+.select-element .dropdown.active{
+    max-height: 300px;
+
+    z-index: 9;
+}
+.select-element .dropdown button{
+    padding: 5px;
+    border: 0;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.2s background;
+    cursor: pointer;
+}
+.select-element .dropdown button:hover{
+    background: #d2e2ff;
+}
+.active_icon{
+    transform: rotate(-180deg);
+}
+.icon{
+    transition: transform 0.2s;
+}
+.select-element span{
+    padding: 10px 0 0 0;
+    font-size: 18px;
+}
+.select-element .toogles{
+    background: white;
+    border: 0;
+    bottom: 0;
+    position: absolute;
+
+    font-size: 20px;
+    border: 0;
+    background: transparent;
+    padding: 3px 16px;
+    cursor: pointer;
+    color: var(--font-color);
+    border-radius: 5px;
+}
+.select-element .toogles:nth-child(1){ left: 0; }
+.select-element .toogles:nth-last-child(1){ right: 0; }

@@ -1,0 +1,74 @@
+.book-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 20px;
+    color: var(--font-color);
+    width: 60%;
+    padding: 10px 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+.book-element .dropdown{
+    max-height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.book-element a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+.active_icon{
+    transform: rotate(-180deg);
+}
+.icon{
+    transition: transform 0.2s;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+
+.row-with-gap{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px;
+    font-weight: 200;
+    gap: 30px;
+}
+.row-with-gap.bottom{
+    font-size: 18px;
+}
+.icon-category{
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+.book-name{
+    text-transform: uppercase;
+}
+.book-name:hover{
+    text-decoration: underline;
+}
+.un-break{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .book-element{
+        width: 90%;
+    }
+}
+@media (max-width: 850px) {
+    .row-with-gap.bottom{
+        flex-direction: column;
+        gap: 0;
+    }
+}

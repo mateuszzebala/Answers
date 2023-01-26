@@ -1,0 +1,88 @@
+.task-element{
+    margin: auto;
+    left: 0;
+    right: 0;
+    --main: var(--special);
+
+}
+.task-element .select-element *{
+    box-sizing: border-box;
+}
+
+.task-element .selects{
+    width: 100%;
+    position: sticky;
+    top: 87px;
+    padding: 10px 0;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.task-element .select-element{
+    width: 20%;
+    margin: 0;
+    border-radius: 0;
+    border-left: 3px solid #000;
+    position: relative;
+    box-sizing: border-box;
+    background: var(--main);
+    color: var(--font-color);
+    border-bottom: 0;
+
+}
+.task-element .select-element:first-child{
+    border-left: 0;
+}
+.task-element .select-element .dropdown{
+    background: var(--main);
+
+    box-sizing: border-box;
+}
+.task-element .select-element .dropdown button{
+    background: var(--main);
+}
+.task-element .task{
+    padding: 30px;
+}
+
+@media (max-width: 1055px){
+    .task-element .select-element{
+        width: 50%;
+        padding: 10px 0;
+    }
+    .task-element .select-element:nth-child(3){
+        border-left: 0;
+    }
+    .task-element .selects{
+        display: inline-block;
+    }
+}
+@media (max-width: 450px){
+    .task-element .select-element{
+        width: 100%;
+    }
+    .task-element .select-element{
+        border-left: 0;
+    }
+}
+.loading-element .spin{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+
+}
+
+.task table tr td{
+    border: 1px solid #000;
+    padding: 5px;
+
+}
+.task img{
+    max-width: 100%;
+}
+.task{
+    max-width: 800px;
+    margin: auto;
+}

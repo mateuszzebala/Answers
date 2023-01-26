@@ -1,0 +1,97 @@
+nav.menu-element .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: gap 0.3s;
+    padding: 20px;
+    background-color: var(--bg-color);
+    background-image: url("../../img/bg_books.png");
+}
+nav.menu-element{
+    box-shadow: 0 0 4px #000;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    --bg-color: var(--special);
+    --font:var(--font-color);
+
+    left: 0;
+    z-index: 20;
+}
+nav.menu-element .icon{
+    font-size: 30px;
+    margin: 0 10px;
+}
+nav.menu-element .logo{
+
+}
+nav.menu-element .burger span{
+    background-color: var(--font);
+    box-shadow: 0 0 5px var(--font);
+}
+nav.menu-element a{
+    color: var(--font);
+}
+nav.menu-element span{
+    
+}
+nav .dropdown
+{
+    max-height: 0;
+    transition: max-height 0.2s linear;
+    overflow: hidden;
+    display: flex;
+    border: 0;
+
+    position: fixed;
+    width: 100%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 19;
+}
+nav > .dropdown{
+    top: 0;
+    box-shadow: 0 0 4px #000;
+}
+
+nav .dropdown a{
+    font-size: 17px;
+}
+@media (max-width: 1060px){
+    nav.menu-element .top .buttons{
+        display: none;
+    }
+}
+@media (max-width: 540px){
+    nav.menu-element .top{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 552px){
+    nav.menu-element .top{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 755px){
+    nav.menu-element .top .search-input-element input{
+        width: auto;
+    }
+}
+@media (max-width: 620px){
+    nav.menu-element .top .search-input-element input{
+        width: 200px;
+    }
+}
+@media (max-width: 552px){
+    nav.menu-element .top   .search-input-element{
+        display: none;
+    }
+}
+

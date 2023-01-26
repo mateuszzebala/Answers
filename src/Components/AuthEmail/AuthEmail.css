@@ -1,0 +1,20 @@
+.auth-email-element{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.auth-email-element .text-element{
+    text-align: center;
+
+}
+.auth-email-element span{
+    font-size: 100px;
+}
+.auth-email-element a{
+    text-decoration: none;
+    color: var(--special);
+    font-weight: bold;
+}

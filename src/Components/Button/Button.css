@@ -1,0 +1,21 @@
+button.button-element{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 3px solid var(--special);
+    margin: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+button.button-element:hover{
+    border-color: rgb(73, 73, 73);
+}
+button.button-element:focus{
+    outline: none;
+    border-color: rgb(73, 73, 73);
+}

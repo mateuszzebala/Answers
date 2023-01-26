@@ -1,0 +1,60 @@
+.search-input-element{
+    background-color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 17;
+    box-sizing: border-box;
+}
+.search-input-element .top-part{
+    z-index: 3;
+    background-color: #fafafa;
+    padding: 8px 16px 8px 8px;
+}
+.search-input-element .dropdown{
+    position: absolute;
+    background-color: #fafafa;
+    transition: max-height 0.2s, min-height 0.2s;
+    border-bottom: 5px solid var(--font-color);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-around;
+}
+.search-input-element .dropdown .hints{
+    text-align: center;
+    color: #000;
+    text-overflow: clip;
+    display: inline-block;
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.search-input-element .dropdown .hints:hover{
+    transform: translate(5px, 0);
+
+}
+
+.search-input-element input{
+    border: 0;
+    background-color: transparent;
+    font-size: 19px;
+    width: 400px;
+}
+.search-input-element input::placeholder{
+    font-weight: 700;
+}
+.search-input-element input:focus{
+    outline: none;
+}
+.hints{
+    width: 100%;
+    height: 30px;
+
+}
+.hr{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}

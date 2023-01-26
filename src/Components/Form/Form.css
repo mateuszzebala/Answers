@@ -1,0 +1,24 @@
+form.form-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form .error{
+    color: red;
+    font-weight: 700;
+    font-size: large;
+    transition: 2s;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(-5px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
